@@ -1,0 +1,134 @@
+//TABLES E SMALERR
+@media(max-width:800px){
+  #header-home{
+    height: 30rem;
+
+    .header-content{
+      padding-top:5rem;
+    }
+  }
+}
+//Smarthphone
+@media(max-width:500px){
+  #main-nav{
+    flex-direction: column;
+    align-items: center;
+
+    li{
+      padding: 1rem;
+    }
+  }
+
+  #header{ 
+  &-home {
+    height: 10rem;
+    border-bottom: 3px solid $main-color;
+    background-position:  20% 30%;
+
+    .header-content{
+      display: none;
+    }
+  }
+  &-inner{
+    height: 10rem;
+  }
+}
+}
+
+//Stack grid colums
+#home-a .specials,
+#home-b .stats,
+#home-c .process,
+#about-d .testimonials,
+.items
+{
+  grid-template-columns: 1fr;
+}
+
+#home{
+  &-a{
+    .specials div{
+      border-bottom: 1px $main-color solid;
+      padding-bottom: 1rem;
+
+      &:last-child{
+        border: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+//About
+#about{
+  &-a{
+    .about-info {
+      grid-template-areas: 
+      'bioimage'
+      'bio'
+      'aw1'
+      'aw2'
+      'aw3';
+    }
+  }
+
+  &-c{
+    display: none;
+  }
+}
+
+//Contact
+#contact{
+  &-a{
+    .text-fields{
+      grid-template-areas: 
+      'name'
+      'subject'
+      'email'
+      'phone'
+      'message';
+    }
+  }
+
+  &-b{
+    .contact-info{
+    grid-template-columns: 1fr;
+    }
+
+    div{
+      padding-bottom: 1rem;
+    }
+  }
+  
+
+  &-c{
+    h1{
+      font-size: 2rem;
+    }
+  }
+}
+
+//Footer
+
+#main-footer{
+  height: 10rem;
+  
+  .footer-content {
+    flex-direction: column;
+    height: 7rem;
+    padding: 1rem;
+   
+  }
+}
+
+
+//landscape
+
+@media(max-height:580px){
+  #header-home{
+
+    .header-content{
+      padding-top: 3rem;
+    }
+  }
+}
