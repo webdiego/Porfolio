@@ -1,6 +1,7 @@
 @import 'config';
 @import 'utility';
 @import 'item_grid';
+
 body {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
@@ -371,5 +372,4 @@ img{
     }
   }
 }
-// Import media queries
-@import 'media'
+@import'media'

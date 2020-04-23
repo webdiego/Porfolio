@@ -33,7 +33,7 @@
     height: 10rem;
   }
 }
-}
+
 
 //Stack grid colums
 #home-a .specials,
@@ -43,8 +43,8 @@
 .items
 {
   grid-template-columns: 1fr;
-}
 
+}
 #home{
   &-a{
     .specials div{
@@ -115,13 +115,13 @@
   
   .footer-content {
     flex-direction: column;
-    height: 7rem;
-    padding: 1rem;
-   
+    padding-bottom: 3rem;
+    height: 5rem;
   }
 }
 
 
+}
 //landscape
 
 @media(max-height:580px){
